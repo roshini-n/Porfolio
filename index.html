@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshini Naguru | Machine Learning Engineer</title>
+    <meta
+      name="description"
+      content="Roshini Naguru builds retrieval-native AI systems, semantic search products, production ML pipelines, and cloud-scale data platforms."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas" class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-noise" aria-hidden="true"></div>
+    <div class="cursor-halo" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scroll-progress-bar"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav shell">
+        <a class="brand" href="#top" aria-label="Roshini Naguru home">
+          <span class="brand-mark">RN</span>
+          <span class="brand-copy">
+            <strong>Roshini Naguru</strong>
+            <small>Machine Learning Engineer</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="site-menu">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="hero">
+        <div class="hero-background" aria-hidden="true">
+          <div class="hero-grid-surface parallax-layer" data-parallax="5"></div>
+          <div class="hero-grid-surface grid-secondary parallax-layer" data-parallax="10"></div>
+          <div class="hero-orb hero-orb-a parallax-layer" data-parallax="12"></div>
+          <div class="hero-orb hero-orb-b parallax-layer" data-parallax="18"></div>
+          <div class="hero-orb hero-orb-c parallax-layer" data-parallax="24"></div>
+          <div class="hero-beam hero-beam-a parallax-layer" data-parallax="8"></div>
+          <div class="hero-beam hero-beam-b parallax-layer" data-parallax="14"></div>
+        </div>
+
+        <div class="shell hero-layout">
+          <div class="hero-copy reveal">
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+              Open to machine learning, AI, and product engineering opportunities
+            </div>
+
+            <p class="eyebrow">
+              Retrieval-Augmented AI • Semantic Search • FastAPI • React • AWS
+            </p>
+
+            <h1 class="hero-title" data-split-text>
+              Retrieval-native AI systems that ship like products.
+            </h1>
+
+            <p class="hero-subtitle">
+              From medical research corpora to full-stack AI platforms, I build
+              intelligent systems with deep back-end engineering, strong ML
+              discipline, and interfaces people can actually use.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View My Work</a>
+              <a class="button ghost" href="assets/Roshini_Naguru_Resume.docx" download
+                >Download Resume</a
+              >
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-chip panel">
+                <span class="chip-label">Experience</span>
+                <strong data-counter-target="3" data-counter-suffix="+">0</strong>
+                <small>Years building ML, NLP, and cloud data systems</small>
+              </article>
+              <article class="metric-chip panel">
+                <span class="chip-label">Research Search</span>
+                <strong data-counter-target="50" data-counter-suffix="K+">0</strong>
+                <small>Documents indexed across semantic search projects</small>
+              </article>
+              <article class="metric-chip panel">
+                <span class="chip-label">Measured Impact</span>
+                <strong data-counter-target="60" data-counter-suffix="%">0</strong>
+                <small>Manual literature review time reduced by RAG delivery</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-stage panel" id="hero-stage">
+              <div class="stage-core parallax-layer" data-parallax="18">
+                <div class="stage-head">
+                  <span class="stage-pill">RAG Control Surface</span>
+                  <span class="stage-signal">Live Architecture</span>
+                </div>
+                <div class="stage-flow">
+                  <article class="flow-node">
+                    <span>01</span>
+                    <strong>Ingest</strong>
+                    <small>PDFs, APIs, structured text</small>
+                  </article>
+                  <article class="flow-node">
+                    <span>02</span>
+                    <strong>Retrieve</strong>
+                    <small>Embeddings, FAISS, Pinecone</small>
+                  </article>
+                  <article class="flow-node">
+                    <span>03</span>
+                    <strong>Respond</strong>
+                    <small>Grounded GPT-4 answers</small>
+                  </article>
+                </div>
+                <div class="stage-query">
+                  <p>Natural language research query</p>
+                  <strong>"Find outcome trends across 3,000+ medical studies"</strong>
+                </div>
+              </div>
+
+              <div class="stage-search parallax-layer" data-parallax="26">
+                <div class="mini-window">
+                  <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>semantic-search-preview</span>
+                </div>
+                <div class="search-cards">
+                  <article>
+                    <p>FastAPI endpoints</p>
+                    <strong>LLM-powered Q&amp;A</strong>
+                  </article>
+                  <article>
+                    <p>Retrieval precision</p>
+                    <strong>Embedding-first search</strong>
+                  </article>
+                  <article>
+                    <p>Delivery stack</p>
+                    <strong>LangChain, PostgreSQL, MLflow</strong>
+                  </article>
+                </div>
+              </div>
+
+              <div class="stage-shipping parallax-layer" data-parallax="15">
+                <div class="stage-head">
+                  <span class="stage-pill">Build + Ship</span>
+                </div>
+                <div class="ship-bars">
+                  <div>
+                    <span>Back-End / APIs</span>
+                    <i style="width: 94%"></i>
+                  </div>
+                  <div>
+                    <span>ML / NLP Systems</span>
+                    <i style="width: 96%"></i>
+                  </div>
+                  <div>
+                    <span>Front-End Delivery</span>
+                    <i style="width: 72%"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stage-cert panel parallax-layer" data-parallax="30">
+                <span class="chip-label">Certifications</span>
+                <strong>AWS + OCI</strong>
+                <small>ML Engineer and Generative AI certified</small>
+              </div>
+
+              <div class="tech-orbit" aria-hidden="true">
+                <span class="tech-pill tech-1 parallax-layer" data-parallax="32">FastAPI</span>
+                <span class="tech-pill tech-2 parallax-layer" data-parallax="22">LangChain</span>
+                <span class="tech-pill tech-3 parallax-layer" data-parallax="28">React</span>
+                <span class="tech-pill tech-4 parallax-layer" data-parallax="16">Pinecone</span>
+                <span class="tech-pill tech-5 parallax-layer" data-parallax="24">TensorFlow</span>
+                <span class="tech-pill tech-6 parallax-layer" data-parallax="19">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shell hero-ribbon reveal">
+          <article class="ribbon-card panel">
+            <span>AI + Product Delivery</span>
+            <strong>RAG, NLP, semantic search, and usable interfaces</strong>
+          </article>
+          <article class="ribbon-card panel">
+            <span>Front-End + Back-End</span>
+            <strong>React, Angular, FastAPI, Firebase, PostgreSQL</strong>
+          </article>
+          <article class="ribbon-card panel">
+            <span>Cloud + MLOps</span>
+            <strong>AWS, Azure, Docker, MLflow, CI/CD</strong>
+          </article>
+          <article class="ribbon-card panel">
+            <span>Highlights</span>
+            <strong>Hands-on projects with measurable results</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="about">
+        <div class="shell">
+          <div class="section-frame about-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">About Me</p>
+              <h2>Applied AI engineering with the mindset of a systems builder.</h2>
+              <p>
+                I enjoy building AI systems from data preparation to deployment,
+                with a strong focus on reliability, usability, and measurable
+                impact.
+              </p>
+            </div>
+
+            <div class="about-grid">
+              <article class="about-story panel reveal">
+                <p>
+                  I like hard problems with real operational edges: extracting
+                  signal from noisy data, shaping it into reproducible pipelines,
+                  grounding model outputs with retrieval, and exposing the result
+                  through APIs and interfaces that feel clear and useful.
+                </p>
+                <p>
+                  My background spans healthcare AI, academic machine learning,
+                  data automation, institutional analytics, and full-stack
+                  product work. That combination lets me move comfortably between
+                  modeling, data engineering, cloud deployment, and the
+                  user-facing layer.
+                </p>
+                <p>
+                  Long term, I want to keep building intelligent systems that are
+                  scalable, measurable, and trustworthy in real-world settings.
+                </p>
+              </article>
+
+              <div class="about-stack">
+                <article class="about-card panel reveal">
+                  <span class="number-chip">01</span>
+                  <h3>What differentiates me</h3>
+                  <p>
+                    Strong back-end and ML depth, with the ability to package the
+                    work into polished AI products instead of isolated models.
+                  </p>
+                </article>
+                <article class="about-card panel reveal">
+                  <span class="number-chip">02</span>
+                  <h3>How I build</h3>
+                  <p>
+                    Data validation first, architecture second, product usability
+                    third. That sequence keeps the system grounded and scalable.
+                  </p>
+                </article>
+                <article class="about-card panel reveal">
+                  <span class="number-chip">03</span>
+                  <h3>Where I add value</h3>
+                  <p>
+                    NLP pipelines, retrieval systems, semantic search, API
+                    delivery, cloud pipelines, and AI platforms that need to
+                    move from prototype to production.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="impact-row">
+              <article class="impact-card panel reveal">
+                <span class="chip-label">Medical AI</span>
+                <strong>3,000+</strong>
+                <small>medical studies in active RAG literature workflows</small>
+              </article>
+              <article class="impact-card panel reveal">
+                <span class="chip-label">Education</span>
+                <strong>30+</strong>
+                <small>graduate ML students supported in lab and debugging work</small>
+              </article>
+              <article class="impact-card panel reveal">
+                <span class="chip-label">Analytics</span>
+                <strong>50%</strong>
+                <small>faster reporting after automation of institutional workflows</small>
+              </article>
+              <article class="impact-card panel reveal">
+                <span class="chip-label">Delivery</span>
+                <strong>200+</strong>
+                <small>users supported on an AI-powered review platform</small>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills">
+        <div class="shell">
+          <div class="section-frame skills-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Skills Architecture</p>
+              <h2>Front-end, back-end, and ML capability mapped as a connected stack.</h2>
+              <p>
+                My work is strongest in back-end engineering, machine learning,
+                NLP, and cloud delivery, with front-end experience for building
+                usable AI products and dashboards.
+              </p>
+            </div>
+
+            <div class="skills-layout">
+              <article class="skills-spotlight panel reveal">
+                <div class="skills-toolbar">
+                  <p class="panel-kicker">Skills Overview</p>
+                  <div class="skill-tabs" id="skill-tabs"></div>
+                </div>
+                <div id="skill-detail"></div>
+              </article>
+
+              <article class="skills-cloud panel reveal">
+                <div class="cloud-copy">
+                  <p class="panel-kicker">Tech Cloud</p>
+                  <h3>Key technologies orbiting the active skill area.</h3>
+                  <p>
+                    Explore the stack across product interfaces, APIs, model
+                    development, and cloud deployment.
+                  </p>
+                </div>
+                <div class="bubble-field" id="skill-bubbles"></div>
+              </article>
+            </div>
+
+            <div class="skill-grid" id="skill-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="shell">
+          <div class="section-frame projects-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Featured Projects</p>
+              <h2>Case studies framed around problem, solution, stack, and impact.</h2>
+              <p>
+                Selected projects across retrieval systems, cloud pipelines,
+                computer vision, and full-stack AI applications.
+              </p>
+            </div>
+
+            <div class="project-grid" id="project-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="experience">
+        <div class="shell">
+          <div class="section-frame experience-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Experience</p>
+              <h2>A career arc moving from analytics and support into production AI ownership.</h2>
+              <p>
+                My experience combines delivery, teaching, analytics, and
+                applied machine learning across academic and healthcare settings.
+              </p>
+            </div>
+
+            <div class="journey-layout">
+              <aside class="journey-summary panel reveal">
+                <p class="panel-kicker">Highlights</p>
+                <h3>Experience snapshot</h3>
+                <div class="journey-points">
+                  <article>
+                    <strong>Promoted in 6 months</strong>
+                    <span>from intern to full-time ML engineer</span>
+                  </article>
+                  <article>
+                    <strong>Production-focused</strong>
+                    <span>FastAPI, MLflow, AWS, Azure, CI/CD</span>
+                  </article>
+                  <article>
+                    <strong>Cross-functional</strong>
+                    <span>teaching, analytics, research, and platform delivery</span>
+                  </article>
+                </div>
+              </aside>
+
+              <div class="timeline" id="experience-timeline"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="education">
+        <div class="shell">
+          <div class="section-frame education-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Education and Research</p>
+              <h2>Formal computer science grounding backed by current AI research.</h2>
+              <p>
+                My academic background complements hands-on work in machine
+                learning, databases, full-stack development, and mobile
+                applications.
+              </p>
+            </div>
+
+            <div class="knowledge-grid">
+              <article class="knowledge-card panel reveal">
+                <p class="panel-kicker">Graduate Degree</p>
+                <h3>M.S. Computer Science</h3>
+                <p class="knowledge-meta">
+                  Northwest Missouri State University • Graduated 2025 • GPA 3.60
+                </p>
+                <p>
+                  Coursework connected theoretical foundations to practical
+                  implementation across machine learning, database systems,
+                  full-stack development, and mobile application engineering.
+                </p>
+                <div class="tag-row">
+                  <span>Machine Learning</span>
+                  <span>DBMS</span>
+                  <span>Data Structures and Algorithms</span>
+                  <span>Full-Stack Web Development</span>
+                  <span>Mobile Development</span>
+                </div>
+              </article>
+
+              <article class="knowledge-card panel reveal">
+                <p class="panel-kicker">Peer-Reviewed Research</p>
+                <h3>The Rise of Agentic AI</h3>
+                <p class="knowledge-meta">
+                  Co-authored paper • Jul 2025 to Aug 2025
+                </p>
+                <p>
+                  Reviewed agentic AI frameworks, architectures, evaluation
+                  metrics, and deployment challenges, with emphasis on modern LLM
+                  agents and autonomous task execution patterns.
+                </p>
+                <div class="tag-row">
+                  <span>Agentic AI</span>
+                  <span>LLM Frameworks</span>
+                  <span>Autonomous Systems</span>
+                  <span>Evaluation Metrics</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="achievements">
+        <div class="shell">
+          <div class="section-frame achievements-frame">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Achievements and Certifications</p>
+              <h2>Numbers, credentials, and proof points that make the profile credible fast.</h2>
+              <p>
+                Certifications, measurable results, and research work that
+                reflect hands-on experience with AI systems and cloud delivery.
+              </p>
+            </div>
+
+            <div class="metrics-grid">
+              <article class="metrics-card panel reveal">
+                <span class="chip-label">SQL Performance</span>
+                <strong data-counter-target="35" data-counter-suffix="%">0</strong>
+                <small>average runtime reduction through query optimization</small>
+              </article>
+              <article class="metrics-card panel reveal">
+                <span class="chip-label">ML Pipeline Outcome</span>
+                <strong
+                  data-counter-target="99.65"
+                  data-counter-suffix="%"
+                  data-counter-decimals="2"
+                  >0</strong
+                >
+                <small>accuracy on asthma risk prediction work</small>
+              </article>
+              <article class="metrics-card panel reveal">
+                <span class="chip-label">Automation Impact</span>
+                <strong data-counter-target="70" data-counter-suffix="%">0</strong>
+                <small>manual content entry reduced in AI review platform work</small>
+              </article>
+              <article class="metrics-card panel reveal">
+                <span class="chip-label">Release Velocity</span>
+                <strong data-counter-target="50" data-counter-suffix="%">0</strong>
+                <small>release cycle reduction using CI/CD and containerization</small>
+              </article>
+            </div>
+
+            <div class="badge-grid" id="badge-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="contact">
+        <div class="shell">
+          <div class="section-frame contact-frame">
+            <div class="contact-layout">
+              <div class="contact-copy reveal">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's build AI systems that are intelligent, scalable, and actually useful.</h2>
+                <p>
+                  I'm especially interested in machine learning engineering,
+                  applied AI, NLP, LLM products, and cloud-based platform roles
+                  where product delivery matters as much as model quality.
+                </p>
+
+                <div class="contact-links">
+                  <a class="contact-link panel" href="mailto:nagururoshini@gmail.com">
+                    <span>Email</span>
+                    <strong>nagururoshini@gmail.com</strong>
+                  </a>
+                  <a class="contact-link panel" href="tel:+16605282685">
+                    <span>Phone</span>
+                    <strong>+1 (660) 528-2685</strong>
+                  </a>
+                  <a
+                    class="contact-link panel"
+                    href="https://github.com/roshini-n"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>GitHub</span>
+                    <strong>github.com/roshini-n</strong>
+                  </a>
+                  <a
+                    class="contact-link panel"
+                    href="https://www.linkedin.com/in/roshininaguru/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>LinkedIn</span>
+                    <strong>linkedin.com/in/roshininaguru</strong>
+                  </a>
+                </div>
+              </div>
+
+              <form class="contact-form panel reveal" id="contact-form">
+                <p class="panel-kicker">Start a conversation</p>
+                <label>
+                  <span>Your name</span>
+                  <input type="text" name="name" placeholder="Hiring manager or collaborator" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="you@company.com" required />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Share the role, project, or idea you want to discuss."
+                    required
+                  ></textarea>
+                </label>
+                <button class="button primary" type="submit">Send Inquiry</button>
+                <small>The form opens your default email client with a pre-filled draft.</small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <p>Roshini Naguru • Machine Learning Engineer • Maryville, MO</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <aside class="assistant-dock panel" id="assistant-dock" aria-label="AI assistant">
+      <div class="assistant-top">
+        <div class="assistant-avatar" id="assistant-avatar" aria-hidden="true">
+          <span class="assistant-ring ring-a"></span>
+          <span class="assistant-ring ring-b"></span>
+          <span class="assistant-ring ring-c"></span>
+          <span class="assistant-core"></span>
+          <span class="assistant-eye"></span>
+        </div>
+        <div class="assistant-meta">
+          <p class="panel-kicker">Quick Guide</p>
+          <strong>Roshini.AI</strong>
+          <small id="assistant-status">Explore skills, projects, and experience</small>
+        </div>
+        <button
+          class="assistant-toggle"
+          id="assistant-toggle"
+          type="button"
+          aria-expanded="true"
+          aria-label="Minimize AI guide"
+        >
+          <span aria-hidden="true">-</span>
+        </button>
+      </div>
+      <div class="assistant-message" id="assistant-message">
+        Ask about skills, projects, or experience.
+      </div>
+      <div class="assistant-prompts">
+        <button class="assistant-prompt" type="button" data-assistant-topic="ml">
+          Skills
+        </button>
+        <button class="assistant-prompt" type="button" data-assistant-topic="backend">
+          Backend
+        </button>
+        <button class="assistant-prompt" type="button" data-assistant-topic="projects">
+          Projects
+        </button>
+        <button class="assistant-prompt" type="button" data-assistant-topic="cloud">
+          Experience
+        </button>
+      </div>
+    </aside>
+
+    <div class="modal" id="project-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close case study" data-close-modal>
+          ×
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
